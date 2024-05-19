@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+<style>
+
+ul.a {
+            list-style-type: square;
+        }
+ 
+ul.b {
+            list-style-type: lower-alpha;
+        }
+    
+    .column {
+        width: 50%; 
+        float: left; 
+        box-sizing: border-box; 
+    }
+
+    /* Styling for demonstration */
+    .column:nth-child(odd) {
+        background-color: antiquewhite; 
+    }
+    .column:nth-child(even) {
+        background-color: #e95858; 
+    }
+</style>
+</head>
+<body>
+    <!-- HTML content with two columns -->
+    <div class="column">
+        <h2>Column 1</h2>
+        <p>This is the content of column 1.
+            <ul class="a">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </p>
+    </div>
+    <div class="column">
+        <h2>Column 2</h2>
+        <p>This is the content of column 2.
+            <ul class="b">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>
